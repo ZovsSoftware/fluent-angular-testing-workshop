@@ -52,7 +52,7 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: config.angularCli && config.angularCli.codeCoverage
-      ? ['spec', 'coverage-istanbul', 'istanbul-threshold']
+      ? ['spec', 'coverage-istanbul']
       : ['spec', 'kjhtml'],
     port: 9876,
     colors: true,
