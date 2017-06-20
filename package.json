@@ -12,6 +12,8 @@
     "test:watch": "ng test --code-coverage",
     "jasmine": "jasmine jasmine-tutorial/calculator.spec.js",
     "lint": "ng lint",
+    "precommit": "npm run lint",
+    "prepush": "ng test --single-run --code-coverage",
     "e2e": "ng e2e"
   },
   "private": true,

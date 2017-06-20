@@ -6,7 +6,7 @@ describe('HackerService', () => {
   let service: ApiService;
 
   // declare an httpSpy variable using the jasmine.createSpyObj method
-  let httpSpy = jasmine.createSpyObj('http', ['get']);
+  const httpSpy = jasmine.createSpyObj('http', ['get']);
 
   beforeEach(() => {
     // create a new instance of the ApiService
